@@ -1,0 +1,83 @@
+  [1m[35mSQL (0.3ms)[0m  [1m[35mSET search_path TO public /*application='ChatziaApi'*/[0m
+  [1m[35m (119.4ms)[0m  [1m[35mCREATE DATABASE "chatzia_api_development" ENCODING = 'unicode' /*application='ChatziaApi'*/[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mSET search_path TO public /*application='ChatziaApi'*/[0m
+  [1m[35m (350.8ms)[0m  [1m[35mCREATE DATABASE "chatzia_api_test" ENCODING = 'unicode' /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='ChatziaApi'*/[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mSET search_path TO public /*application='ChatziaApi'*/[0m
+  [1m[35m (201.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chatzia_api_development" /*application='ChatziaApi'*/[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[35mSET search_path TO public /*application='ChatziaApi'*/[0m
+  [1m[35m (114.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chatzia_api_test" /*application='ChatziaApi'*/[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mSET search_path TO public /*application='ChatziaApi'*/[0m
+  [1m[35m (106.6ms)[0m  [1m[35mCREATE DATABASE "chatzia_api_development" ENCODING = 'unicode' /*application='ChatziaApi'*/[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mSET search_path TO public /*application='ChatziaApi'*/[0m
+  [1m[35m (145.2ms)[0m  [1m[35mCREATE DATABASE "chatzia_api_test" ENCODING = 'unicode' /*application='ChatziaApi'*/[0m
+  [1m[35m (13.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY) /*application='ChatziaApi'*/[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='ChatziaApi'*/[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2780497599585447420) /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-08-01 04:30:22.033669', '2025-08-01 04:30:22.033673') RETURNING "key" /*application='ChatziaApi'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(2780497599585447420) /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-08-01 06:30:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jferrer/.local/share/mise/installs/ruby/3.4.5/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jferrer/.local/share/mise/installs/ruby/3.4.5/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 9.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/icon.png" for 127.0.0.1 at 2025-08-01 06:30:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/icon.png"):
+  
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2780497599585447420) /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='ChatziaApi'*/[0m
+Migrating to CreateUsers (20250801043258)
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN /*application='ChatziaApi'*/[0m
+  [1m[35m (17.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL) /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250801043258') RETURNING "version" /*application='ChatziaApi'*/[0m
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT /*application='ChatziaApi'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2780497599585447420) /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2780497599585447420) /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='ChatziaApi'*/[0m
+Migrating to CreateAgentes (20250801044103)
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mBEGIN /*application='ChatziaApi'*/[0m
+  [1m[35m (23.5ms)[0m  [1m[35mCREATE TABLE "agentes" ("id" bigserial primary key, "nombre" character varying, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_c39621f2e2"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+) /*application='ChatziaApi'*/[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE INDEX "index_agentes_on_user_id" ON "agentes" ("user_id") /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250801044103') RETURNING "version" /*application='ChatziaApi'*/[0m
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[35mCOMMIT /*application='ChatziaApi'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2780497599585447420) /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-08-01 06:42:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/jferrer/.local/share/mise/installs/ruby/3.4.5/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/jferrer/.local/share/mise/installs/ruby/3.4.5/lib/ruby/gems/3.4.0/gems/railties-8.0.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 5.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 14.3ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2780497599585447420) /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='ChatziaApi'*/[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(2780497599585447420) /*application='ChatziaApi'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-08-01 06:44:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ChatziaApi'*/[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (28.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /*action='index',application='ChatziaApi',controller='users'*/[0m
+  ↳ app/controllers/users_controller.rb:8:in 'UsersController#index'
+Completed 200 OK in 108ms (Views: -2.5ms | ActiveRecord: 36.1ms (1 query, 0 cached) | GC: 17.2ms)
+
+
