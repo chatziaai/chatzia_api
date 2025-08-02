@@ -1,24 +1,65 @@
-# README
+Pasos para deploy:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+crear app rails modo api
+   ```bash
+rails new chatzia_api --api -d postgresql
+bundle install
+rails db:create db:migrate db:seed
+rails server
+   ```
 
-Things you may want to cover:
+#scaffolds
+   ```bash
+rails generate scaffold User email:string
+rails db:migrate
+   ```
 
-* Ruby version
+Un usuario puede tener varios agentes
+Todo agente pertenece a un usuario.
 
-* System dependencies
+Crear el Agente
 
-* Configuration
+   ```bash
+rails generate scaffold Agente name:string user:references channels:string status:integer
+rails db:migrate
+   ```
+Crear la onversacion
+   ```bash
+rails generate scaffold Conversation user:references agente:references duracion:integer resumen:text
+rails db:migrate
+   ```
 
-* Database creation
+Crear los mensajes
+   ```bash
+rails generate scaffold Mensaje contenido:text user:references agente:references conversation:references
+rails db:migrate
+   ```
+Creasr kis okanes
+   ```bash
 
-* Database initialization
+rails generate scaffold Plan name:string price:integer message_limit:integer chatbot_limit:integer
+rails db:migrate
+   ```
 
-* How to run the test suite
+Creae
+   ```bash
+rails generate scaffold Faq agente:references question:string answer:string
+rails db:migrate
+   ```
+bsfdzbzbdf
+   ```bash
+#añadir las claves ajenas y completar los modelos para integridad
+rails generate migration AddDetailsToUsers
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+Haer el commit en Github   
+   ```bash
+git remote add origin https://github.com/chatziaai/chatzia_api.git
+git add .
+git commit -m "cc"
+git push --set-upstream origin main
 
-* Deployment instructions
+   ```
 
-* ...
+
+
